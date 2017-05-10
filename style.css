@@ -1,0 +1,9 @@
+div div div.makeMeBlue 
+{
+background-color:blue;
+}
+
+div#x-wrapper>ul>li{
+background-color:blue;
+}
+
