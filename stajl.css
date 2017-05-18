@@ -1,0 +1,47 @@
+
+        html,
+        body {
+            min-height: 100%;
+        }
+
+        body {
+            background: #333 url('todo.png') no-repeat top center;
+            color: #fff;
+            font-family: "Lato", sans-serif;
+        }
+    .mygrid {
+    width: 600px;
+    display: grid;
+    grid-gap: 10px;
+grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr 4fr 1fr;
+        grid-template-areas: "header header"
+                             "menu content"
+                             "sidebar content"
+                             "footer footer"
+            
+}
+
+.mygrid:hover {
+    opacity: 0.2;
+}
+
+.mygrid>* {
+    border: 1px dashed pink;
+}
+
+header {
+    grid-area: header;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.content {
+    grid-area: content;
+}
+
+footer {
+    grid-area: footer;
+}
