@@ -5,21 +5,37 @@
         }
 
         body {
-            background: #333 url('todo.png') no-repeat top center;
-            color: #fff;
-            font-family: "Lato", sans-serif;
+            background-color: azure;
+            font-family: 'Poppins', sans-serif;
+            src: url(<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">);
         }
+a:link { color: #696; text-decoration: none; background-color: transparent }
+a:visited { color: #699; text-decoration: none; background-color: transparent }
+a:hover { color: #c93; text-decoration: underline; background-color: transparent }
+a:active { color: #900; text-decoration: underline; background-color: transparent }
+menu {
+font-family: 'Poppins', sans-serif;
+background-color: yellow;
+   margin: auto auto;
+    padding: 10px 15px;
+};
+
+
+header{
+    margin: auto auto;
+}
+
+
     .mygrid {
-    width: 600px;
+    width: 1000px;
     display: grid;
     grid-gap: 10px;
-grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 4fr 4fr 1fr;
-        grid-template-areas: "header header"
-                             "menu content"
-                             "sidebar content"
-                             "footer footer"
-            
+grid-template-columns: 3fr 2fr 2fr;
+    grid-template-rows: 300px 150px 60px;
+        grid-template-areas: "work1 work2 work3";
+                             "work4 work5 work6";
+                             "footer footer footer";
+        margin: auto auto;
 }
 
 .mygrid:hover {
@@ -27,11 +43,7 @@ grid-template-columns: 1fr 4fr;
 }
 
 .mygrid>* {
-    border: 1px dashed pink;
-}
-
-header {
-    grid-area: header;
+    
 }
 
 .sidebar {
@@ -39,9 +51,12 @@ header {
 }
 
 .content {
-    grid-area: content;
+    grid-area: work1;
 }
 
 footer {
     grid-area: footer;
+        background-color: yellow;
+   margin: auto auto;
+    padding: 10px 15px;
 }
