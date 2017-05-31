@@ -1,50 +1,72 @@
+html,
+body {
+    min-height: 100%;
+}
 
-        html,
-        body {
-            min-height: 100%;
-        }
+body {
+    background-color: azure;
+    font-family: 'Montserrat', sans-serif;
+    padding-top:90px;
+}
 
-        body {
-            background-color: azure;
-            font-family: 'Poppins', sans-serif;
-            src: url(<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">);
-        }
-a:link { color: #696; text-decoration: none; background-color: transparent }
-a:visited { color: #699; text-decoration: none; background-color: transparent }
-a:hover { color: #c93; text-decoration: underline; background-color: transparent }
-a:active { color: #900; text-decoration: underline; background-color: transparent }
+a:link {
+    color: #00FF7F;
+    text-decoration: none;
+    background-color: transparent
+}
+
+a:visited {
+    color: #00cc66;
+    text-decoration: none;
+    background-color: transparent
+}
+
+a:hover {
+    color: #FFFF00;
+    text-decoration: none;
+    background-color: transparent
+}
+
+a:active {
+    color: white;
+    text-decoration: none;
+    background-color: #FFFF00;
+    padding: 4px;
+}
+
 menu {
-font-family: 'Poppins', sans-serif;
-background-color: yellow;
-   margin: auto auto;
+    margin: auto auto;
     padding: 10px 15px;
-};
+}
 
+;
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
 
-header{
+.header {
+    text-align: center;
+    position: fixed;
+    top:0;
+    width:100%;
+    background: #fff;
+    height: 90px;
+}
+
+.mygrid {
+    width: 1080px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 3fr 2fr 2fr;
+    grid-template-rows: 300px 300px 300px;
+    grid-template-areas: "work1 work2 work3";
+    "work4 work5 work6";
+    "footer footer footer";
     margin: auto auto;
 }
 
-
-    .mygrid {
-    width: 1000px;
-    display: grid;
-    grid-gap: 10px;
-grid-template-columns: 3fr 2fr 2fr;
-    grid-template-rows: 300px 150px 60px;
-        grid-template-areas: "work1 work2 work3";
-                             "work4 work5 work6";
-                             "footer footer footer";
-        margin: auto auto;
-}
-
-.mygrid:hover {
-    opacity: 0.2;
-}
-
-.mygrid>* {
-    
-}
+.mygrid>* {}
 
 .sidebar {
     grid-area: sidebar;
@@ -55,8 +77,8 @@ grid-template-columns: 3fr 2fr 2fr;
 }
 
 footer {
-    grid-area: footer;
-        background-color: yellow;
-   margin: auto auto;
+    background-color: #00FF7F;
+    font-color: white;
+    margin: auto auto;
     padding: 10px 15px;
 }
