@@ -46,17 +46,20 @@ a:active {
 
 .header {
     text-align: left;
-    position: fixed;
     top:0;
     width:100%;
     background: #fff;
-    height: 90px;
+    background-opacity: 0.6;
+    height: 80px;
     padding: 10px;
     position: fixed;
 }
+header background{
+    opacity: 0.5;
+}
 
 .header img {
-    /*! float: left; */
+    float: left;
     position: absolute;
     left: 10px;
 }
@@ -67,49 +70,66 @@ a:active {
     letter-spacing: 3px;
     text-align: center;
     margin-top: 10px;
-
 }
 
-    
-}
-
-.mygrid {
-    width: 100%;
-    max-width: 1200px;
-    grid-gap: 10px;
-    grid-template-columns: 3fr 2fr 2fr;
-    grid-template-rows: 300px 300px 300px;
-    grid-template-areas: "menu menu menu";
-                        "work1 work2 work3";
-                        "footer footer footer";
-    margin: auto auto;
-}
-
-@media (max-width: 700px) {
-    .mygrid {
-    grid-template-columns: 1fr;
-    grid-template-rows: 100px 1000px 100px;
-    grid-template-areas: 
-    }
+.navigation a{
+    margin-left: 20px;
 }
 
 .menu {
-   text-align: center;
-    padding: 10px 15px;
+    text-align: center;
+    width: 100%;
+    font-size: 13px;
+    padding: 10px 0;
     letter-spacing: 1px;
-    grid-area: menu;
 }
   .menu a{
         margin-left:20px;
     }
 
-.content {
-    grid-area: work1;
+
+.mygrid {
+    width: 100%;
+    grid-gap: 20px;
+    grid-row-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px 300px;
+    grid-template-areas: "work work work work";
+                        "work work work work";
+                        "footer footer footer footer";
+    margin: auto auto;
 }
 
-footer {
-    background-color: #00FF7F;
-    font-color: white;
+
+
+.maz01{
+    position: absolute;
+    left: 1px;
+    top: 97px;
+}
+ 
+.maz02{
+    position: absolute;
+    top: 550px;
+    left: 1000px;
+    bottom: 200px;
+}
+
+.content {
+    grid-area: work;
+}
+
+.footer {
+    text-align: center;
+    width: 100%;
+    letter-spacing: 2px;
     margin: auto auto;
     padding: 10px 15px;
+    grid-area: footer;
+    
+}
+
+.footer img{
+    height:13px;
+    padding: auto;
 }
