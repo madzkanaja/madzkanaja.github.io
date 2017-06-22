@@ -11,7 +11,6 @@ body {
     line-height: 2;
 }
 
-
 a:link {
     color: black;
     text-decoration: none;
@@ -37,6 +36,15 @@ a:active {
     padding: 4px;
 }
 
+.ikonki a:active {
+    padding: 0px;
+}
+
+.ikonki a:hover {
+    background: #b7ab2299;
+    opacity: 0.5;
+    transition: all 0.5s;
+}
 
 ;
 .dropdown {
@@ -45,23 +53,32 @@ a:active {
 }
 
 .header {
-    text-align: left;
-    top:0;
-    width:100%;
-    background: #fff;
-    background-opacity: 0.6;
-    height: 80px;
+    top: 0;
+    width: 100%;
+    background: #ffffffb3;
+    height: 85px;
     padding: 10px;
     position: fixed;
-}
-header background{
-    opacity: 0.5;
 }
 
 .header img {
     float: left;
     position: absolute;
     left: 10px;
+}
+
+.header .ikonki {
+    position: absolute;
+    right: 50px;
+    padding-top: 10px;
+}
+
+.header .ikonki img {
+    position: initial;
+}
+
+.active {
+    color: #FFFF00;
 }
 
 .navigation {
@@ -72,8 +89,9 @@ header background{
     margin-top: 10px;
 }
 
-.navigation a{
+.navigation a {
     margin-left: 20px;
+    transition: all 0.3s;
 }
 
 .menu {
@@ -83,53 +101,79 @@ header background{
     padding: 10px 0;
     letter-spacing: 1px;
 }
-  .menu a{
-        margin-left:20px;
-    }
 
-
-.mygrid {
-    width: 100%;
-    grid-gap: 20px;
-    grid-row-gap: 20px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 300px 300px 300px;
-    grid-template-areas: "work work work work";
-                        "work work work work";
-                        "footer footer footer footer";
-    margin: auto auto;
+.menu a {
+    margin-left: 20px;
+    transition: all 0.3s;
 }
 
+.bio {
+    text-align: justify;
+    padding: 2% 50% 10% 15%;
+}
 
+.contact {
+    padding: 100px;
+    font-size: 40px;
+    align-items: center;
+    justify-content: center;
+}
+ 
 
-.maz01{
+.mygrid {
+    width: 87%;
+    display: grid;
+    grid-gap: 25px;
+    padding-top: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "work work work work"
+                         "work work work work"
+                        "footer footer footer footer"
+}
+
+.mygrid img:hover {
+    background: rgba(0, 0, 0, .75);
+    opacity: 0.7;
+    -webkit-transition: opacity .25s ease;
+
+}
+
+.maz01 {
     position: absolute;
     left: 1px;
     top: 97px;
 }
- 
-.maz02{
+
+.maz02 {
     position: absolute;
     top: 550px;
     left: 1000px;
     bottom: 200px;
 }
 
-.content {
-    grid-area: work;
+.foto {
+    position: absolute;
+    right: 750px;
+    top: 280px;
+    
 }
+
 
 .footer {
     text-align: center;
     width: 100%;
+    bottom: 0;
     letter-spacing: 2px;
     margin: auto auto;
-    padding: 10px 15px;
     grid-area: footer;
+    height: 50px;
+    position: fixed;
     
 }
 
-.footer img{
-    height:13px;
-    padding: auto;
+.footer img {
+    height: 13px;
 }
