@@ -170,10 +170,22 @@ a:active {
     margin: auto auto;
     grid-area: footer;
     height: 50px;
-    position: fixed;
+    
     
 }
 
 .footer img {
     height: 13px;
+}
+
+.footer2 {
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+    letter-spacing: 2px;
+    margin: auto auto;
+    grid-area: footer;
+    height: 50px;
+    position: fixed;
+    
 }
